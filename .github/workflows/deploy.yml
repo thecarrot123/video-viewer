@@ -24,7 +24,6 @@ jobs:
         run: npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
-        permissions:
-          contents: write
         with:
+          branch: gh-pages
           folder: build
