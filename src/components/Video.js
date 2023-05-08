@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactPlayer from "react-player";
 import VideoUpdateButton from "./VideoUploadButton";
 import VideoPlayer from "./VideoPlayer";
 import Title from "./Title";
