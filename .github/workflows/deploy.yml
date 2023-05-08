@@ -23,7 +23,8 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: build
+        run: |
+          git config --global user.name 'Murhaf Alawir'
+          git config --global user.email ${{ secrets.EMAIL }}
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}    
+          npm run deploy
