@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import AddTextButton from "./AddTextButton";
 import Textare from "./Textare";
 import InputText from "./InputText";
