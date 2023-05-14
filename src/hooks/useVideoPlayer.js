@@ -13,7 +13,7 @@ const useVideoPlayer = (videoElement) => {
   const [playerState, setPlayerState] = useState({
     isPlaying: false,
     timeProgress: 0,
-    Progress: "00:00",
+    progress: "00:00",
     duration: 0,
     timeDuration: "00:00",
   });
