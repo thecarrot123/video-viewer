@@ -30,7 +30,7 @@ export const Subtitle = ({ textValues }) => {
           style={{
             fontFamily: textValues.fontType,
             fontSize: textValues.fontSize + "px",
-            bottom: textValues.position + "px",
+            bottom: 60 + textValues.position + "px",
           }}
         >
           {currentIndex < subtitles.length &&

@@ -3,6 +3,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 50px;
+    z-index: 3000;
 
 }
 .subtitle-container{
@@ -11,7 +12,6 @@
     width: fit-content;
     height: fit-content;
     padding: 10px;
-    // h-index:3000;
     display: flex;
     flex-direction: row;
     align-items: center;

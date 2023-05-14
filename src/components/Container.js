@@ -6,10 +6,10 @@ import Select from "./Select";
 
 const Container = (props) => {
   const [textValues, setTextValues] = useState({
-    text: "",
+    text: "Hi Hi Hi Hi Hi",
     fontType: "Arial, Helvetica, sans-serif",
-    fontSize: 0,
-    position: 0,
+    fontSize: 10,
+    position: 30,
     submitied: false,
   });
   const fontOptions = [
@@ -30,10 +30,10 @@ const Container = (props) => {
     e.preventDefault();
     props.setTextValues({ ...textValues, submitied: true });
     setTextValues({
-      text: "",
+      text: "Hi Hi Hi Hi Hi",
       fontType: "Arial, Helvetica, sans-serif",
-      fontSize: 0,
-      position: 0,
+      fontSize: 10,
+      position: 30,
       submitied: false,
     });
   };
@@ -54,7 +54,7 @@ const Container = (props) => {
       />
       <InputText
         name={"position"}
-        label={"position:"}
+        label={"position bottom:"}
         handleOnChange={handleOnChange}
         value={textValues.position}
       />
