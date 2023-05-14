@@ -3,8 +3,9 @@ import useVideoPlayer from "../hooks/useVideoPlayer";
 import { MdPauseCircle } from "react-icons/md";
 import { MdNotStarted } from "react-icons/md";
 import ProgressBar from "./ProgressBar";
+import { Subtitle } from "./Subtitle";
 
-const VideoPlayer = ({ source }) => {
+const VideoPlayer = ({ source, textValues }) => {
   const videoElement = useRef(null);
   const { playerState, togglePlay, handleOnTimeUpdate, handleVideoProgress } =
     useVideoPlayer(videoElement);
@@ -38,6 +39,7 @@ const VideoPlayer = ({ source }) => {
             timeDuration={playerState.timeDuration}
             handleVideoProgress={handleVideoProgress}
           />
+          {textValues.submitied && <Subtitle textValues={textValues} />}
         </div>
       </div>
     </div>
