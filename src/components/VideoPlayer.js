@@ -39,7 +39,9 @@ const VideoPlayer = ({ source, textValues }) => {
             timeDuration={playerState.timeDuration}
             handleVideoProgress={handleVideoProgress}
           />
-          {textValues.submitied && <Subtitle textValues={textValues} />}
+          {textValues.submitied && playerState.isPlaying && (
+            <Subtitle textValues={textValues} />
+          )}
         </div>
       </div>
     </div>
